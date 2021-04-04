@@ -12,8 +12,8 @@ public class TestesDescontos {
 		
 		CalculadoraDeDescontos calculadora = new CalculadoraDeDescontos();
 		
-		System.out.println(calculadora.calcular(primeiro));
-		System.out.println(calculadora.calcular(segundo));
+		System.out.println("Teste de primeiro desconto " + calculadora.calcular(primeiro));
+		System.out.println("Teste de segundo desconto " + calculadora.calcular(segundo));
 
 	}
 
