@@ -1,20 +1,24 @@
 package br.com.devmos.loja.pedido;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import br.com.devmos.loja.Orcamento;
+import br.com.devmos.loja.pedido.acao.AcaoAposGerarPedido;
 
 public class GeraPedidoHandler {
 	
-	//construtor com injecao de dependencias: repository, service
+	List<AcaoAposGerarPedido> acoes;
+	
+	public GeraPedidoHandler(List<AcaoAposGerarPedido> acoes) {
+		this.acoes = acoes;
+	}
 	
 	public void executa(GeraPedido dados) {
 		Orcamento orcamento = new Orcamento(dados.getValorOrcamento(), dados.getQuantidadeItens());		
 		Pedido pedido = new Pedido(dados.getCliente(), LocalDateTime.now(), orcamento);
 		
-		System.out.println("Salvar no banco de dados");
-		System.out.println("Enviar email com dados do pedido");
-		
+		acoes.forEach(acao -> acao.executar(pedido));
 	}
 
 }
