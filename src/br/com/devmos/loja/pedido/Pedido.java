@@ -2,7 +2,7 @@ package br.com.devmos.loja.pedido;
 
 import java.time.LocalDateTime;
 
-import br.com.devmos.loja.Orcamento;
+import br.com.devmos.loja.orcamento.Orcamento;
 
 public class Pedido {
 	private String cliente;

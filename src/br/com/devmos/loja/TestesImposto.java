@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 import br.com.devmos.loja.imposto.CalculadoraDeImposto;
 import br.com.devmos.loja.imposto.ICMS;
+import br.com.devmos.loja.orcamento.Orcamento;
 
 public class TestesImposto {
 

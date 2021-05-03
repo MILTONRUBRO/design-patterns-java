@@ -3,7 +3,7 @@ package br.com.devmos.loja.pedido;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import br.com.devmos.loja.Orcamento;
+import br.com.devmos.loja.orcamento.Orcamento;
 import br.com.devmos.loja.pedido.acao.AcaoAposGerarPedido;
 
 public class GeraPedidoHandler {

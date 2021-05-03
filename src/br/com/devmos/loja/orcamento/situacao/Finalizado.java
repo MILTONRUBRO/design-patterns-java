@@ -1,4 +1,4 @@
-package br.com.devmos.loja.situacao;
+package br.com.devmos.loja.orcamento.situacao;
 
 public class Finalizado extends SituacaoOrcamento{
 

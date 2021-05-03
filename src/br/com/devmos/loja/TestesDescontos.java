@@ -3,6 +3,7 @@ package br.com.devmos.loja;
 import java.math.BigDecimal;
 
 import br.com.devmos.loja.desconto.CalculadoraDeDescontos;
+import br.com.devmos.loja.orcamento.Orcamento;
 
 public class TestesDescontos {
 

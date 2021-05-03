@@ -1,6 +1,6 @@
-package br.com.devmos.loja.situacao;
+package br.com.devmos.loja.orcamento.situacao;
 
-import br.com.devmos.loja.Orcamento;
+import br.com.devmos.loja.orcamento.Orcamento;
 
 public class Reprovado extends SituacaoOrcamento {
 	
