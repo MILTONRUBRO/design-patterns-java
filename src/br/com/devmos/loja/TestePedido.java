@@ -21,6 +21,13 @@ public class TestePedido {
 							  new EnviarEmail()));
 		
 		handler.executa(pedido);
+		
+		GeraPedido pedido2 = new GeraPedido(cliente, valorOrcamento, quantidadeItens);
+		GeraPedidoHandler handler2 = new GeraPedidoHandler(
+				Arrays.asList(new SalvarPedidoBancoDeDados(), 
+							  new EnviarEmail()));
+		handler2.executa(pedido2);
+
 	}
 
 }
